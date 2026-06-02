@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 use App\GraphQL\Types\PostType;
 use App\GraphQL\Queries\PostsQuery;
+use App\GraphQL\Mutations\CreatePostsMutation;
 
 return [
     'route' => [
@@ -83,6 +84,7 @@ return [
             ],
             'mutation' => [
                 // ExampleMutation::class,
+                    CreatePostsMutation::class,
             ],
             // The types only available in this schema
             'types' => [

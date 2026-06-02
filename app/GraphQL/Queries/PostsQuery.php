@@ -6,12 +6,6 @@ namespace App\GraphQL\Queries;
 
 use Closure;
 use App\Models\Post;
-// use Rebing\GraphQL\Support\Facades\GraphQL;
-// use GraphQL\Type\Definition\ResolveInfo;
-// use GraphQL\Type\Definition\Type;
-// use Rebing\GraphQL\Support\Query;
-// use Rebing\GraphQL\Support\SelectFields;
-
 use GraphQL\Type\Definition\Type;
 use Illuminate\Support\Collection;
 use Rebing\GraphQL\Support\Facades\GraphQL;
@@ -20,7 +14,7 @@ use Rebing\GraphQL\Support\Query;
 class PostsQuery extends Query
 {
     protected $attributes = [
-        'name' => 'posts', // 'getPosts',
+        'name' => 'posts', // 'getPosts'
         'description' => 'Get Posts',
     ];
 
