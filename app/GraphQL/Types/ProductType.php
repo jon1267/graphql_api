@@ -43,9 +43,9 @@ class ProductType extends GraphQLType
                 'type' => Type::nonNull(Type::int()),
                 'description' => 'Stock of the product',
             ],
-            'category' => [
-                'type' => Type::nonNull(Type::string()),
-                'description' => 'Category of the product',
+            'category_id' => [
+                'type' => Type::nonNull(Type::int()),
+                'description' => 'Category ID of the product',
             ],
         ];
     }

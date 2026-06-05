@@ -3,7 +3,9 @@
 declare(strict_types = 1);
 
 use App\GraphQL\Types\PostType;
+use App\GraphQL\Types\ProductType;
 use App\GraphQL\Queries\PostsQuery;
+use App\GraphQL\Queries\ProductQuery;
 use App\GraphQL\Mutations\CreatePostsMutation;
 use App\GraphQL\Mutations\DeletePostMutation;
 
@@ -82,6 +84,7 @@ return [
             'query' => [
                 // ExampleQuery::class,
                 PostsQuery::class,
+                ProductQuery::class,
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -92,6 +95,7 @@ return [
             'types' => [
                 // ExampleType::class,
                 PostType::class,
+                ProductType::class,
             ],
 
             // Laravel HTTP middleware
